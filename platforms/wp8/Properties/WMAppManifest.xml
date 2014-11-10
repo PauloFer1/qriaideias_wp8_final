@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment AppPlatformVersion="8.0" xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment">
+  <DefaultLanguage code="pt-PT" xmlns="" />
+  <Languages xmlns="">
+    <Language code="en-US" />
+  </Languages>
+  <App Author="Tarambola" BitsPerPixel="32" Description="Gestor de Projectos" Genre="apps.normal" ProductID="{D81D379A-743A-4975-90C9-FB77E13E3623}" Publisher="Tarambola" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="QriaIdeias" Version="1.0" xmlns="">
+    <IconPath IsRelative="true" IsResource="false">icon-50.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TaskName="_default" TokenID="QriaIdeiasToken">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">icon-30.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">icon-50.png</BackgroundImageURI>
+          <Title>QriaIdeias</Title>
+          <BackContent />
+          <BackBackgroundImageURI />
+          <BackTitle />
+          <LargeBackgroundImageURI />
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI />
+          <DeviceLockImageURI />
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+    </ScreenResolutions>
+    <Requirements>
+      <Requirement Name="ID_REQ_REARCAMERA" />
+      <Requirement Name="ID_REQ_FRONTCAMERA" />
+    </Requirements>
+  </App>
+</Deployment>

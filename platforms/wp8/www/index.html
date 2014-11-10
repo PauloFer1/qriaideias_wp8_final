@@ -1,0 +1,323 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>  
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        
+         <meta name="viewport" content="maximum-scale=1, minimum-scale=1, width=480, height=device-height, target-densitydpi=device-dpi, user-scalable=no" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/css.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.4.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css" />
+        <link rel="stylesheet" type="text/css" href="css/override.css" />
+        <link rel="stylesheet" type="text/css" href="css/override-android-res.css" />
+
+        <title>QriaIdeias login</title>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+        <script type="text/javascript">
+            window.onerror = function(message, url, lineNumber) {
+                console.log("Error: "+message+" in "+url+" at line "+lineNumber);
+            }
+        </script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/sha1.js"></script>
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.media.js"></script>
+        <script type="text/javascript" src="js/jquery.gdocsviewer.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/fotos.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page0">
+            <div id="headerLogin" data-role="header" >
+                <img id="topBar" src="images/top_bar.png"/>
+                <img class="logoLogin" src="images/logo_login.png">
+            </div>
+            <h2 id="LoginH2">Login</h2>
+            <form id="login_form" data-ajax="true">                
+                <input type="email" name="tara_username" id="username" value="" placeholder="email" class="input1Line"/>
+                <input type="password" name="tara_password" id="password" value="" placeholder="password" class="input1Line" />
+                <input type="submit" value="Entrar" id="btnLogin" name="login"/>
+            </form>
+        </div>
+        <!-- PROJECTS -->
+        <div data-role="page" id="page1" data-position="fixed" >
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack none"></a>
+                <a href="#" class="aHome refresh"></a>
+                <div class="header2">
+                    <h2>Projectos</h2>
+                </div>
+            </div>
+            <div data-role="content" id="content" style="display:none">
+                <ul data-role="listview" id="ulList1">
+                    <li class="ulList2Li"><a class="lojaA" href="#page3" data-transition="none">Teste projecto 1</a></li><li class="ulList2Li"><a class="lojaA" href="#page3" data-transition="none">Teste projecto 1</a></li>
+                </ul>
+            </div>
+
+            <div class="footer" data-tap-toggle="false">
+                <div data-role="navbar" data-iconpos="top" id="notificationBar">
+                    <ul id="footerObs">
+                        <li><a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop" id="btnNotificacoes">Notificações</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- @PROJECTS -->
+        <!-- LOJAS -->
+        <div data-role="page" id="page2" data-position="fixed">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                </div>
+            </div>
+            <div data-role="content" id="content" >
+                <ul data-role="listview" id="ulList2"></ul>
+            </div>
+
+            <div data-role="footer" class="footer" data-tap-toggle="false">
+            </div>
+        </div>        
+        <!-- @LOJAS -->
+        <!-- LOJA -->
+        <div data-role="page" id="page3" data-position="fixed">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                </div>
+            </div>
+            <div id="content">
+                <div class="ui-grid-a bolasMenu">
+                    <div class="ui-block-a div2"><a href="" id="maqueteBtn" data-role="button" class="btnLoja"><img class="bolas" id="btn_maquete" src="images/btn_maquete.png"></a></div>
+                    <div class="ui-block-b div2"><a href="" id="fichaBtn" data-role="button" class="btnLoja"><img class="bolas" id="btn_ficha" src="images/btn_ficha.png"></a></div>
+                    <div class="ui-block-a div2"><a href="" id="fotosBtn" data-role="button" class="btnLoja"><img class="bolas" id="btn_fotos" src="images/btn_fotos.png"></a></div>
+                    <div class="ui-block-b div2"><a href="" id="obsBtn" data-role="button" class="btnLoja"><img class="bolas" id="btn_obs" src="images/btn_obs.png"></a></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- @LOJA -->
+        <!-- FOTOS -->
+        <div data-role="page" id="page4">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_fotos_top.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" data-role="content" >
+                <div class="ui-grid-a fotosList">
+                </div>
+            </div>
+
+            <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul id="footerFotos">
+                        <li><a href="#" id="btnFoto"><span></span>Inserir Foto</a></li>
+                        <li><a href="#" id="btnInsertCommentMenuInactive"><span></span>Comentar</a></li>
+                        <li><a href="#" id="btnCommentInactive"><span></span>Comentários</a></li>
+                        <li><a href="#" id="btnMaquete"><span></span>Maquete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!-- @FOTOS -->
+        <!-- FOTO -->
+        <div data-role="page" id="page5">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_fotos_top.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" data-role="content">
+                <div>
+                    <img id="imgBig" src="" />
+                    <p id="description">
+
+                    </p>
+                    <img id="editDesc" src="images/edit_desc.png">
+                </div>
+            </div>
+            <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul id="footerFotos">
+                        <li><a href="#" id="btnFoto"><span></span>Inserir Foto</a></li>
+                        <li><a href="#" id="btnInsertCommentMenu"><span></span>Comentar</a></li>
+                        <li><a href="#" id="btnComment"><span></span>Comentários</a></li>
+                        <li><a href="#" id="btnMaquete"><span></span>Maquete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- @FOTO -->
+        <!-- MAQUETE -->
+        <div data-role="page" id="page6">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_maquete_top.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div>
+                    <img id="imgBig2" src="" />
+                </div>
+            </div>
+        </div>
+        <!-- @MAQUETE -->
+        <!-- OBSERVAÇõES -->
+        <div data-role="page" id="page7">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_observacaoes_top.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" >
+                <ul data-role="listview" id="oberList"></ul>
+            </div>
+            <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul id="footerObs">
+                        <li><a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop" id="btnInsertObs">Inserir Observação</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <!-- @OBSERVAÇõES -->
+        <!-- INSERT OBSERVAÇÃO -->
+        <div data-role="page" id="page8">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_observacaoes_top.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="content" >
+                <div id="InsertObsForm">
+                    <textarea id="OberservacaoTextArea"></textarea>
+                    <input type="submit" id="OberservacaoInsert" value="INSERIR" />
+                </div>
+            </div>
+
+        </div>
+        <!-- @INSERT OBSERVAÇÃO -->
+        <!-- COMMENTS -->
+        <div data-role="page" id="page10">
+            <div id="header" data-role="header" data-position="fixed" data-dom-cache="true" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_fotos_top.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <ul data-role="listview" id="comentList"></ul>
+            </div>
+            <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul id="footerObs">
+                        <li><a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="check" data-theme="a" data-transition="pop" id="btnInsertComentario">Inserir Comentário</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- @COMMENTS -->
+        <!-- INSERT COMMENT -->
+        <div data-role="page" id="page11">
+            <div id="header" data-role="header" data-position="fixed" data-tap-toggle="false">
+                <div id="statusBar"></div>
+                <img id="topBar" src="images/top_bar.png" />
+                <img class="logoImg" src="images/logo.png">
+                <a href="#" data-rel="back" class="aBack"></a>
+                <a href="#" class="aHome"></a>
+                <div class="header2">
+                    <h2 id="proj" class="proj"></h2>
+                    <h3 id="loja" class="loja"></h3>
+                    <div id="divPag">
+                        <img class="divPagImg" src="images/btn_fotos_top.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="content" >
+                <div id="InsertComentForm">
+                    <textarea id="OberservacaoTextArea1"></textarea>
+                    <input type="submit" id="btnInsertComment" value="INSERIR" />
+                </div>
+            </div>
+            <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+            </div>
+        </div>
+        <!-- @INSERT COMMENT -->
+    </body>
+</html>

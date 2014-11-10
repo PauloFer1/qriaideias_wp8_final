@@ -1,0 +1,97 @@
+/* 
+    Document   : override
+    Created on : 6/Dez/2013, 14:39:26
+    Author     : paulofernandes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#login_form .ui-btn-inner{
+    font-size: 30px;
+}
+
+#InsertComentForm .ui-btn-inner{
+    font-size: 30px;
+}
+
+#InsertObsForm .ui-btn-inner{
+    font-size: 30px;
+}
+#username{
+    font-size: 30px;
+}
+
+#password{
+    font-size: 30px;
+}
+
+.ulList1Li{
+    background: #ffffff;
+    height:95px;
+    width:100%;
+    z-index: 0;
+    padding-top: 14px !important;
+    border-bottom: 1px solid #cccccc;
+}
+.ulList2Li{
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    height:95px;
+    width:100%;
+    z-index: 0;
+    padding-top: 14px !important;
+}
+.ulList2Li a{font-size: 28px !important;}
+.ulList1Li a{font-size: 28px !important;}
+h2{
+        font-size: 32px !important;
+    }
+h3{
+        font-size: 28px !important;
+    }
+.logoImg{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.aBack{
+    /*background: url(../images/btn_back.png)  !important; */
+    margin-top: 36px !important;
+
+}
+#login_form .ui-btn-text {
+font-size: 30px !important;
+}
+.oberItemTop{
+    font-size: 18px!important;
+}
+.oberItemDate{
+    font-size: 16px!important;
+}
+.oberItemCont{
+    white-space: normal !important;
+    line-height: 1.2em;
+    font-size: 28px !important;
+    font-weight: normal !important;
+}
+.imgBorder{
+     
+}
+#footerNotification
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.notificationLink{
+    padding-top: 25px;
+    color: #333;
+    font-size: 22px !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nrNotifications{
+    font-size: 38px !important;
+    color: #FF0000;
+}
+#imgBig2{
+    width: 100%;
+}

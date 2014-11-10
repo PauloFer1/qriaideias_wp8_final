@@ -1,0 +1,10 @@
+.ui-page {
+webkit-backface-visibility:hidden;
+overflow:hidden;
+ height:960px !important;
+ width:640px !important;
+}
+.divGal
+{
+    height: 100px;
+}

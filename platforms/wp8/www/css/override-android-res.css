@@ -1,0 +1,98 @@
+@media (max-width: 500px) 
+{ 
+    body{
+        font-size: 40% !important;
+        zoom: 0.8;
+    }
+    #listUl{
+        font-size: 18px; 
+    }
+    .ui-input-btn 
+{
+    font-size:30px !important;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+    h1 {
+    font-size:16px;}
+    .span30Black{
+        font-size: 17px;}
+    .listLi{
+        font-size: 15px !important;
+    }
+    .divHead2{font-size: 15px !important;}
+    .divHead3{font-size: 15px !important;}
+    .divHead4{font-size: 15px !important;}
+    .divBody3{width: 19%;}
+   .divBody2{ width: 37%;}
+   .divBody4{width: 19%;}
+   .infoDivLeft{margin-bottom: 6px !important; font-size: 26px !important;}
+   .infoDivRight{margin-bottom: 6px !important;font-size: 26px !important;}
+   .valueBtn{font-size: 26px !important;}
+   #filterTag{font-size: 17px !important;}
+   .buttonFooterAll{font-size: 25px !important;}
+   .dateInput{font-size: 14px !important;}
+   .dividaLabel{width: 100% !important;}
+   #data1Input{width: 100% !important;}
+   #data2Input{width: 100% !important;}
+   .buttonDate{font-size: 25px !important;}
+   .deleteBtn{font-size: 16px;}
+}
+@media (max-width: 330px) 
+{ 
+    body{
+        font-size: 30% !important;
+        zoom: 0.5;
+    }
+    #listUl{
+        font-size: 16px; 
+    }
+    h1 {
+    font-size:14px;}
+    .listLi{
+        font-size: 13px !important;
+    }
+    .ui-input-btn 
+{
+    font-size:25px !important;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+    .divHead2{font-size: 13px !important;}
+    .divHead3{font-size: 13px !important;}
+    .divHead4{font-size: 13px !important;}
+    .divBody3{width: 19%;}
+   .divBody2{ width: 37%;}
+   .divBody4{width: 19%;}
+   .infoDivLeft{margin-bottom: 4px !important; font-size: 24px !important;}
+   .infoDivRight{margin-bottom: 4px !important;font-size: 24px !important;}
+   .valueBtn{font-size: 24px !important;}
+   #filterTag{font-size: 16px !important;}
+   .buttonFooterAll{font-size: 24px !important;}
+   .dateInput{font-size: 14px !important;}
+   .dividaLabel{width: 100% !important;}
+   #data1Input{width: 100% !important;}
+   #data2Input{width: 100% !important;}
+   .buttonDate{font-size: 24px !important;}
+   .deleteBtn{font-size: 15px;}
+}
+li{-webkit-transform:translate(0px,0px);}
+
+@media (min-width: 800px) {
+    .divGal
+    {
+        height: 380px;
+    }
+}
+@media (max-width: 790px) {
+    .divGal
+    {
+        height: 200px;
+    }
+}
+@media (max-width: 650px) {
+    .divGal
+    {
+        height: 160px;
+    }
+}
